@@ -1,7 +1,7 @@
 # Space-Steps (In Progress)
 
 
-Game Concept: After a supernova explosion far away from our current scene, a space crew tries to protect their space station from the incoming asteroid storm cause by the explosion.
+Game Concept: After a supernova explosion far away from our current scene, a space crew tries to protect their space station from the incoming asteroid storm caused by the explosion.
 
 
 Features to add:
