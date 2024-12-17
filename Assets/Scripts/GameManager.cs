@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-       
+       QuitGame();
     }
 
     IEnumerator MeteorSpawn()
@@ -37,6 +37,15 @@ public class GameManager : MonoBehaviour
             asteroidRb.AddForce((player.transform.position-spawnerPoint.transform.position) * meteorLaunchSpeed,ForceMode.Impulse);
             asteroidRb.AddTorque(Random.Range(-75f,75f),Random.Range(-75f,75f),Random.Range(-75f,75f), ForceMode.Acceleration);
 
+        }
+    }
+
+    private void QuitGame()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Game Session Ended");
+            Application.Quit();
         }
     }
 }
